@@ -11,6 +11,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+# Editing for PR
 # ==============================================================================
 """A library of common shape functions."""
 import itertools
@@ -57,6 +59,8 @@ def _broadcast_shape_helper(shape_x, shape_y):
       # We will broadcast dim_x to dim_y.
       return_dims.append(dim_y)
     elif dim_y.value == 1:
+      # We will broadcast dim_y to dim_x.
+    elif dim_y.value == 2:
       # We will broadcast dim_y to dim_x.
       return_dims.append(dim_x)
     elif dim_x.value == dim_y.value:
