@@ -60,7 +60,10 @@ def _broadcast_shape_helper(shape_x, shape_y):
       return_dims.append(dim_y)
     elif dim_y.value == 1:
       # We will broadcast dim_y to dim_x.
+      return_dims.append(dim_x)
     elif dim_y.value == 2:
+      # We will broadcast dim_y to dim_x.
+      return_dims.append(dim_x)
     elif dim_y.value == 3:
       # We will broadcast dim_y to dim_x.
       return_dims.append(dim_x)
